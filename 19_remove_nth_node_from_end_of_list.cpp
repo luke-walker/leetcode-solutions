@@ -1,5 +1,5 @@
 // Time Complexity: O(n)
-// Space Complexity: O(n)
+// Auxiliary Space: O(n)
 
 /**
  * Definition for singly-linked list.

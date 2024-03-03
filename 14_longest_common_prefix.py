@@ -1,5 +1,5 @@
 # Time Complexity: O(m*n)
-# Space Complexity: O(n)
+# Auxiliary Space: O(n)
 # m = # of strings, n = length of shortest string
 
 class Solution:

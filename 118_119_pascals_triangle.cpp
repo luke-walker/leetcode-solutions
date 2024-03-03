@@ -1,5 +1,5 @@
 // Time Complexity: O(n^2)
-// Space Complexity: O(n^2)
+// Auxiliary Space: O(n^2)
 //     Note: Can be improved to O(1) with formula
 
 class Solution {

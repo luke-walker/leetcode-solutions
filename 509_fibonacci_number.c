@@ -1,5 +1,5 @@
 // Time Complexity: O(n)
-// Space Complexity: O(n)
+// Auxiliary Space: O(n)
 
 int fib(int n) {
     if (n == 0 || n == 1) {
