@@ -1,4 +1,4 @@
-# Time Complexity: O(n^2 log n)
+# Time Complexity: O(n log n)
 # Auxiliary Space: O(n)
 
 class Solution:
