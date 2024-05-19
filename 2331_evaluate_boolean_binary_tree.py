@@ -1,5 +1,5 @@
 # Time Complexity: O(n)
-# Auxiliary Space: O(log n)
+# Auxiliary Space: O(h)
 
 # Definition for a binary tree node.
 # class TreeNode:
