@@ -1,13 +1,21 @@
+// Time Complexity: O(n)
+// Auxiliary Space: O(n)
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        const int n = nums.size();
+        unordered_map<int, int> map;
+        
+        for (int i = 0; i < nums.size(); ++i) {
+            int x = target - nums[i];
 
-        for (int i = 0; i < n-1; ++i)
-            for (int j = i+1; j < n; ++j)
-                if (nums[i]+nums[j] == target)
-                    return vector<int>{i, j};
+            if (map.contains(x)) {
+                return {i, map[x]};
+            }
 
-        return vector<int>();
+            map.insert(make_pair(nums[i], i));
+        }
+
+        return {};
     }
 };
