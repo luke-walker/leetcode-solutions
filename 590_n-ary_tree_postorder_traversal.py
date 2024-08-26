@@ -20,8 +20,8 @@ class Solution:
         while len(stack) > 0:
             node = stack.pop()
 
-            result.append(node.val)
+            result.insert(0, node.val)
             if node.children is not None:
                 stack.extend(node.children)
 
-        return result[::-1]
+        return result
