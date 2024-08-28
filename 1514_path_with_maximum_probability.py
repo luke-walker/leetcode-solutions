@@ -8,8 +8,8 @@ class Solution:
     def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start_node: int, end_node: int) -> float:
         graph = defaultdict(lambda: [])
         for i, edge in enumerate(edges):
-            for node in edge:
-                graph[node].append((succProb[i], edge[abs(edge.index(node)-1)]))
+            for j, node in enumerate(edge):
+                graph[node].append((succProb[i], edge[abs(j-1)]))
             
         visited = set()
         queue = [(-1, start_node)]
